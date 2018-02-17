@@ -1,0 +1,16 @@
+{
+	"name": "Ninjality",
+	"icons": [
+		{
+			"src": "\/themes\/ninjality\/favicons\/android-chrome-192x192.png?v=ngGzKMween",
+			"sizes": "192x192",
+			"type": "image\/png"
+		},
+		{
+			"src": "\/themes\/ninjalityfavicons\/android-chrome-384x384.png?v=ngGzKMween",
+			"sizes": "384x384",
+			"type": "image\/png"
+		}
+	],
+	"theme_color": "#323232"
+}
