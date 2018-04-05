@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Helmet from 'react-helmet'
 import Container from '../components/Container'
 import { Button } from '../components/Button'
 import { Input, Textarea } from '../components/Input'
@@ -8,6 +9,7 @@ class Contact extends Component {
   render() {
     return (
       <Container>
+        <Helmet title='Contact' />
         <Form action="https://jumprock.co/mail/ninjality" method="post">
           <input type="text" name="trapit" value="" style={{ display: 'none' }} />
           <input type="hidden" name="replyto" value="%email" />
