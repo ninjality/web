@@ -6,7 +6,6 @@ const BrandSearchSvg = ({ size }) => (
     viewBox="0 0 512 512"
     width={size || '100'}
     height={size || '100'}
-    aria-hidden="true"
   >
     <path fill="#3d49ba" d="M0 0h512v512H0z" />
     <path d="M51 35h136v136H51V35zM241 35h219v55H241V35zM241 117h219v54H241v-54zM51 228h409v55H51v-55zM51 325h409v54H51v-54zM51 422h409v54H51v-54z" fill="#fff" opacity=".1" />

@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Ninjality <team@ninjality.com>",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.5.1",
     "gatsby": "^1.8.12",
     "gatsby-link": "^1.6.8",
     "gatsby-plugin-google-analytics": "^1.0.4",

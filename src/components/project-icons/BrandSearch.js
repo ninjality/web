@@ -7,7 +7,6 @@ const BrandSearchSvg = ({ size }) => (
     viewBox="0 0 341.333 341.333"
     width={size || '100'}
     height={size || '100'}
-    aria-hidden="true"
   >
     <defs>
       <clipPath id="a">

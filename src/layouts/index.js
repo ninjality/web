@@ -5,6 +5,8 @@ import 'normalize.css'
 import 'minireset.css'
 import Head from '../components/Head'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
+import { colors } from '../config'
 
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Questrial');
@@ -14,7 +16,7 @@ injectGlobal`
   }
 
   a {
-    color: #850009;
+    color: ${colors.primary};
     text-decoration: none;
 
     &:hover,
@@ -31,8 +33,9 @@ class Template extends Component {
     return (
       <div>
         <Head />
-        <Header />
+        <Header location={this.props.location} />
         {children()}
+        <Footer />
       </div>
     )
   }
