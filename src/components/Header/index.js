@@ -12,6 +12,11 @@ const taglines = {
   '/contact': 'Get in touch.',
 }
 
+const isDefaultTagline = location => (
+  location.pathname === '/' ||
+  typeof taglines[location.pathname] === 'undefined'
+)
+
 const Header = ({ location }) => (
   <HeaderContainer role="header">
     <Logo>
@@ -23,7 +28,7 @@ const Header = ({ location }) => (
         </Link>
       )}
     </Logo>
-    <Tagline>
+    <Tagline secondary={!isDefaultTagline(location)}>
       {taglines[location.pathname] || taglines.default}
     </Tagline>
   </HeaderContainer>
