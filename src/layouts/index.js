@@ -28,12 +28,12 @@ injectGlobal`
 
 class Template extends Component {
   render() {
-    const { children } = this.props
+    const { children, location } = this.props
 
     return (
       <div>
         <Head />
-        <Header location={this.props.location} />
+        <Header location={location} />
         {children()}
         <Footer />
       </div>

@@ -11,3 +11,5 @@ export const AccessibleText = styled.span`
   white-space: nowrap;
   border: 0;
 `
+
+export const AccessibleLabel = AccessibleText.withComponent('label')

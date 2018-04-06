@@ -7,16 +7,6 @@ import {
   Tagline,
 } from './styled'
 
-const taglines = {
-  default: 'Building open source.',
-  '/contact': 'Get in touch.',
-}
-
-const isDefaultTagline = location => (
-  location.pathname === '/' ||
-  typeof taglines[location.pathname] === 'undefined'
-)
-
 const Header = ({ location }) => (
   <HeaderContainer role="header">
     <Logo>
@@ -28,9 +18,11 @@ const Header = ({ location }) => (
         </Link>
       )}
     </Logo>
-    <Tagline secondary={!isDefaultTagline(location)}>
-      {taglines[location.pathname] || taglines.default}
-    </Tagline>
+    {location.pathname === '/' && (
+      <Tagline>
+        Building Open Tools
+      </Tagline>
+    )}
   </HeaderContainer>
 )
 

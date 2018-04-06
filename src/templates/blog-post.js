@@ -1,22 +1,48 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
-import get from 'lodash/get'
+import Container from '../components/Container'
+import Title from '../components/Title'
+import {
+  Meta,
+  Content,
+  OtherArticlesLink,
+  OtherArticlesIcon,
+} from '../components/Article'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const { html, frontmatter } = post
+    const {
+      title,
+      excerpt,
+      author,
+      categories,
+      date,
+    } = frontmatter
 
     return (
-      <div>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <h1>{post.frontmatter.title}</h1>
-        <p>
-          {post.frontmatter.date}
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      <Container>
+        <Helmet title={title}>
+          <meta property="og:title" content={title} />
+          <meta property="og:type" content="article" />
+          <meta name="twitter:title" content={title} />
+          <meta name="twitter:description" content={excerpt} />
+          <meta name="description" content={excerpt} />
+        </Helmet>
+        <Title>{title}</Title>
+        <Meta>
+          {categories} by {author} on {date}
+        </Meta>
+        <Content dangerouslySetInnerHTML={{ __html: html }} />
+        <div>
+          <OtherArticlesLink to="/blog">
+            <OtherArticlesIcon />
+            <span>Read more articles</span>
+          </OtherArticlesLink>
+        </div>
+      </Container>
     )
   }
 }
@@ -25,16 +51,14 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       id
       html
       frontmatter {
         title
+        excerpt
+        author
+        categories
         date(formatString: "MMMM DD, YYYY")
       }
     }
