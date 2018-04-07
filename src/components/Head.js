@@ -7,7 +7,7 @@ const SeoMeta = () => (
     titleTemplate="%s - Ninjality"
   >
     <html lang="en" />
-    <meta name="description" content="Building open source." />
+    <meta name="description" content="Building Open Tools" />
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
@@ -36,7 +36,7 @@ const SeoMeta = () => (
     <meta name="apple-mobile-web-app-title" content="Ninjality" />
     <meta name="application-name" content="Ninjality" />
     <meta name="msapplication-config" content="/favicons/browserconfig.xml?v=ngGzKMween" />
-    <meta name="theme-color" content="#323232" />
+    <meta name="theme-color" content="#222222" />
   </Helmet>
 )
 
