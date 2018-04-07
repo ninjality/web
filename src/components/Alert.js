@@ -6,6 +6,16 @@ export const Alert = styled.div`
   text-align: center;
   color: #fff;
   background-color: ${colors.secondary};
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
 `
 
 export const SuccessAlert = Alert.extend`

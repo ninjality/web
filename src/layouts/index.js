@@ -27,7 +27,30 @@ injectGlobal`
   }
 `
 
-class Template extends Component {
+class Layout extends Component {
+  detectOffline() {
+    if (typeof window === 'undefined') return
+
+    const { Offline } = require('react-detect-offline')
+
+    return (
+      <Offline>
+        <div
+          style={{
+            marginTop: '-32px',
+            marginBottom: '64px',
+            textAlign: 'center',
+            fontSize: '20px',
+            fontWeight: 'bold',
+            color: colors.red,
+          }}
+        >
+          No network connection. Some content may be unavailable.
+        </div>
+      </Offline>
+    )
+  }
+
   render() {
     const { children, location } = this.props
 
@@ -35,6 +58,7 @@ class Template extends Component {
       <div>
         <Head />
         <Header location={location} />
+        {this.detectOffline()}
         {children()}
         <Footer />
       </div>
@@ -42,4 +66,4 @@ class Template extends Component {
   }
 }
 
-export default Template
+export default Layout

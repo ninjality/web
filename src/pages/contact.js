@@ -14,7 +14,10 @@ class Contact extends Component {
   render() {
     return (
       <Container>
-        <Helmet title="Contact" />
+        <Helmet title="Contact">
+          <link rel="canonical" href="https://ninjality.com/contact" />
+          <meta name="description" content="Contact the Ninjality team." />
+        </Helmet>
         <Title hasBackButton>Send Us An Email</Title>
         <Form action={FORM_ENDPOINT} method="post">
           <input

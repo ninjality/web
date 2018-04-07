@@ -4,7 +4,7 @@ import LogoSvg from '../LogoSvg'
 import { HeaderContainer, Logo, Tagline } from './styled'
 
 const Header = ({ location }) => (
-  <HeaderContainer role="header">
+  <HeaderContainer role="banner">
     <Logo>
       {location.pathname === '/' ? (
         <LogoSvg />

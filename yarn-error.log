@@ -43,6 +43,7 @@ npm manifest:
       "minireset.css": "^0.0.3",
       "normalize.css": "^8.0.0",
       "prism-themes": "^1.0.0",
+      "react-detect-offline": "^2.0.1",
       "react-feather": "^1.1.0",
       "styled-components": "^3.1.6"
     },
@@ -66,7 +67,7 @@ npm manifest:
       "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
       "develop": "gatsby develop",
       "build": "gatsby build",
-      "deploy": "gatsby build && surge",
+      "deploy": "gatsby build && surge ./public",
       "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
     }
   }
@@ -7832,6 +7833,10 @@ Lockfile:
   react-deep-force-update@^2.1.1:
     version "2.1.1"
     resolved "https://registry.yarnpkg.com/react-deep-force-update/-/react-deep-force-update-2.1.1.tgz#8ea4263cd6455a050b37445b3f08fd839d86e909"
+  
+  react-detect-offline@^2.0.1:
+    version "2.0.1"
+    resolved "https://registry.yarnpkg.com/react-detect-offline/-/react-detect-offline-2.0.1.tgz#4a05846f3b7fc0caa9cd1c444bbe21c95d38709d"
   
   react-dev-utils@^4.2.1:
     version "4.2.1"

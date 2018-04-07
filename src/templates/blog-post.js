@@ -14,11 +14,12 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const { html, frontmatter } = post
-    const { title, excerpt, author, categories, date } = frontmatter
+    const { title, excerpt, author, categories, date, path } = frontmatter
 
     return (
       <Container>
         <Helmet title={title}>
+          <link rel="canonical" href={`https://ninjality.com${path}`} />
           <meta property="og:title" content={title} />
           <meta property="og:type" content="article" />
           <meta name="twitter:title" content={title} />
@@ -54,6 +55,7 @@ export const pageQuery = graphql`
         author
         categories
         date(formatString: "MMMM DD, YYYY")
+        path
       }
     }
   }

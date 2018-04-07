@@ -18,7 +18,13 @@ class BlogIndex extends Component {
 
     return (
       <div>
-        <Helmet title="Blog" />
+        <Helmet title="Blog">
+          <link rel="canonical" href="https://ninjality.com/blog" />
+          <meta
+            name="description"
+            content="Articles from the Ninjality team."
+          />
+        </Helmet>
         <Container>
           <Title hasBackButton>Our Thoughts</Title>
           <ArticleList>
