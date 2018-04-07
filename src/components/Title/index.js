@@ -4,7 +4,7 @@ import { TitleContainer } from './styled'
 
 export default ({ hasBackButton, children }) => (
   <TitleContainer>
-    {hasBackButton && <Back to='/'>Back home</Back>}
+    {hasBackButton && <Back to="/">Back home</Back>}
     <span>{children}</span>
   </TitleContainer>
 )

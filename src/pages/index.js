@@ -10,10 +10,14 @@ class Index extends Component {
     return (
       <div>
         <ProjectGrid offCenter bottomSpacing>
-          {firstProjectsRow.map(project => <ProjectGridItem {...project} key={project.id} />)}
+          {firstProjectsRow.map(project => (
+            <ProjectGridItem {...project} key={project.id} />
+          ))}
         </ProjectGrid>
         <ProjectGrid offCenter>
-          {secondProjectsRow.map(project => <ProjectGridItem {...project} key={project.id} />)}
+          {secondProjectsRow.map(project => (
+            <ProjectGridItem {...project} key={project.id} />
+          ))}
         </ProjectGrid>
       </div>
     )

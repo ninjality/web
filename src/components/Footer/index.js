@@ -1,6 +1,6 @@
 import React from 'react'
 import { Mail } from 'react-feather'
-import SlkMediaSvg from '../project-icons/SlkMedia';
+import SlkMediaSvg from '../project-icons/SlkMedia'
 import { AccessibleText } from '../ScreenReader'
 import {
   FooterContainer,

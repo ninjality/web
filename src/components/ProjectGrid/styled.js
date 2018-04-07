@@ -22,11 +22,8 @@ export const Anchor = styled.a`
   display: flex;
   color: ${colors.secondary};
   transition: all 200ms ease;
-  ${props => props.disabled && 'pointer-events: disabled;'}
-
-  &:hover,
-  &:focus {
-    color: ${props => props.disabled ? colors.secondary : colors.primary};
+  ${props => props.disabled && 'pointer-events: disabled;'} &:hover, &:focus {
+    color: ${props => (props.disabled ? colors.secondary : colors.primary)};
     text-decoration: none;
 
     @media ${screen.mediumUp} {

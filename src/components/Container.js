@@ -13,8 +13,8 @@ const Container = styled.div`
 
   @media ${screen.mediumUp} {
     padding-left: 6.5rem;
-    ${props => !props.offCenter && 'padding-right: 6.5rem;'}
-    ${props => props.bottomSpacing && 'margin-bottom: 2rem;'}
+    ${props => !props.offCenter && 'padding-right: 6.5rem;'} ${props =>
+        props.bottomSpacing && 'margin-bottom: 2rem;'};
   }
 `
 

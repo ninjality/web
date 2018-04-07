@@ -1,11 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import LogoSvg from '../LogoSvg'
-import {
-  HeaderContainer,
-  Logo,
-  Tagline,
-} from './styled'
+import { HeaderContainer, Logo, Tagline } from './styled'
 
 const Header = ({ location }) => (
   <HeaderContainer role="header">
@@ -18,11 +14,7 @@ const Header = ({ location }) => (
         </Link>
       )}
     </Logo>
-    {location.pathname === '/' && (
-      <Tagline>
-        Building Open Tools
-      </Tagline>
-    )}
+    {location.pathname === '/' && <Tagline>Building Open Tools</Tagline>}
   </HeaderContainer>
 )
 

@@ -10,7 +10,8 @@ export default [
     id: 'brandsearch',
     name: 'Brand Search',
     url: 'https://brand.sh/',
-    description: 'Search assets, colors, and standards for a variety of different brands.',
+    description:
+      'Search assets, colors, and standards for a variety of different brands.',
     icon: <BrandSearch />,
   },
   {
@@ -18,18 +19,18 @@ export default [
     name: 'devnews',
     url: 'https://devne.ws/',
     description: 'Developer news aggregator.',
-    icon: <Devnews />
+    icon: <Devnews />,
   },
   {
     id: 'socialshares',
     name: 'socialshares',
     url: 'https://socialshar.es/',
     description: 'Responsive, secure, and fast share buttons.',
-    icon: <Socialshares />
+    icon: <Socialshares />,
   },
   {
     id: 'more',
     description: 'More coming soon.',
     icon: <Box color={gray} size={100} />,
-  }
+  },
 ]

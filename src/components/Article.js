@@ -31,7 +31,12 @@ export const Content = styled.div`
   font-size: 1.2rem;
   line-height: 1.5;
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-bottom: 2rem;
     font-weight: 800;
     line-height: 1.1;

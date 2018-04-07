@@ -12,7 +12,7 @@ export default [
   {
     label: 'Follow us on Facebook',
     url: 'https://www.facebook.com/ninjalitydesign',
-    icon: <Facebook size={ICON_SIZE} style={{marginLeft: '-5px'}} />,
+    icon: <Facebook size={ICON_SIZE} style={{ marginLeft: '-5px' }} />,
   },
   {
     label: 'Follow us on LinkedIn',

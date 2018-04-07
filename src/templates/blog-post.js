@@ -14,13 +14,7 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const { html, frontmatter } = post
-    const {
-      title,
-      excerpt,
-      author,
-      categories,
-      date,
-    } = frontmatter
+    const { title, excerpt, author, categories, date } = frontmatter
 
     return (
       <Container>

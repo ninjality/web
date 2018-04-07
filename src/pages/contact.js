@@ -14,26 +14,48 @@ class Contact extends Component {
   render() {
     return (
       <Container>
-        <Helmet title='Contact' />
+        <Helmet title="Contact" />
         <Title hasBackButton>Send Us An Email</Title>
         <Form action={FORM_ENDPOINT} method="post">
-          <input type="text" name="trapit" value="" style={{ display: 'none' }} />
+          <input
+            type="text"
+            name="trapit"
+            value=""
+            style={{ display: 'none' }}
+          />
           <input type="hidden" name="replyto" value="%email" />
           <input type="hidden" name="after" value={FORM_REDIRECT} />
 
           <Group>
             <AccessibleLabel htmlFor="nameInput">Name</AccessibleLabel>
-            <Input type="text" name="name" id="nameInput" placeholder="Name" required />
+            <Input
+              type="text"
+              name="name"
+              id="nameInput"
+              placeholder="Name"
+              required
+            />
           </Group>
 
           <Group>
             <AccessibleLabel htmlFor="emailInput">Email</AccessibleLabel>
-            <Input type="text" name="email" id="emailInput" placeholder="Email" required />
+            <Input
+              type="text"
+              name="email"
+              id="emailInput"
+              placeholder="Email"
+              required
+            />
           </Group>
 
           <Group>
             <AccessibleLabel htmlFor="messageInput">Message</AccessibleLabel>
-            <Textarea name="message" id="messageInput" placeholder="Message" required />
+            <Textarea
+              name="message"
+              id="messageInput"
+              placeholder="Message"
+              required
+            />
           </Group>
 
           <Group>

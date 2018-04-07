@@ -18,24 +18,27 @@ class BlogIndex extends Component {
 
     return (
       <div>
-        <Helmet title='Blog' />
+        <Helmet title="Blog" />
         <Container>
           <Title hasBackButton>Our Thoughts</Title>
           <ArticleList>
             {posts.map(post => {
               if (post.node.path !== '/404') {
-                const title = get(post, 'node.frontmatter.title') || post.node.path
+                const title =
+                  get(post, 'node.frontmatter.title') || post.node.path
                 const { categories, author, date } = post.node.frontmatter
                 return (
                   <ArticleItem key={post.node.frontmatter.path}>
-                    <ArticleLink to={post.node.frontmatter.path} >
+                    <ArticleLink to={post.node.frontmatter.path}>
                       {post.node.frontmatter.title}
                     </ArticleLink>
                     <ArticleMeta>
                       {categories} by {author} on {date}
                     </ArticleMeta>
                     <ArticleExcerpt
-                      dangerouslySetInnerHTML={{ __html: post.node.frontmatter.excerpt }}
+                      dangerouslySetInnerHTML={{
+                        __html: post.node.frontmatter.excerpt,
+                      }}
                     />
                   </ArticleItem>
                 )
@@ -66,9 +69,9 @@ export const pageQuery = graphql`
             date(formatString: "DD MMMM, YYYY")
           }
           frontmatter {
-            title,
-            author,
-            categories,
+            title
+            author
+            categories
             excerpt
           }
         }

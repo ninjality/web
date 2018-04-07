@@ -1,20 +1,10 @@
 import React from 'react'
 import Container from '../Container'
-import {
-  Grid,
-  Item,
-  Anchor,
-  Icon,
-  Content,
-  Name,
-  Description
-} from './styled'
+import { Grid, Item, Anchor, Icon, Content, Name, Description } from './styled'
 
 export const ProjectGrid = ({ children, ...otherProps }) => (
   <Container {...otherProps}>
-    <Grid>
-      {children}
-    </Grid>
+    <Grid>{children}</Grid>
   </Container>
 )
 
