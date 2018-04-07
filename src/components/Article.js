@@ -77,7 +77,13 @@ export const Content = styled.div`
   ol,
   ul,
   dl {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    list-style: inherit;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
   }
 
   dd {
@@ -97,7 +103,7 @@ export const Content = styled.div`
   }
 
   pre {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   figure {

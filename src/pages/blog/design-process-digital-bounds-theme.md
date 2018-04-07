@@ -3,7 +3,7 @@ title: "Design Process: Digital Bounds Theme"
 excerpt: "We discuss our design process with the Digital Bounds redesign."
 author: "Kyle McDonald"
 categories: "Design"
-date: "2015-04-01T00:00:00.000Z"
+date: "2015-04-01T05:17:50.000-04:00"
 path: "/blog/design-process-digital-bounds-theme"
 ---
 

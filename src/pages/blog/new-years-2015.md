@@ -1,9 +1,9 @@
 ---
 title: "A Look Into 2015"
 excerpt: "We talk about the new year, design refresh, and future plans for Hylus and our YouTube channel."
-author: "Kyle McDonald"
+author: "Sunny Singh"
 categories: "News"
-date: "2015-01-01T00:00:00.000Z"
+date: "2015-01-01T05:08:27.000-05:00"
 path: "/blog/new-years-2015"
 ---
 

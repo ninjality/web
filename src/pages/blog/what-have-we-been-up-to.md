@@ -1,9 +1,9 @@
 ---
 title: "What Have We Been Up To?"
-excerpt: "A post keeping you updated on the work we have been doing lately."
+excerpt: "A post keeping you updated on the work we have been doing lately"
 author: "Kyle McDonald"
 categories: "News"
-date: "2014-03-05T00:00:00.000Z"
+date: "2014-03-05T05:07:31.000-05:00"
 path: "/blog/what-have-we-been-up-to"
 ---
 

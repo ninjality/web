@@ -1,9 +1,9 @@
 ---
-title: "Redesign & new blog"
+title: "Redesign & New Blog"
 excerpt: "A post announcing the redesign of Ninjality and the addition of a blog."
 author: "Sunny Singh"
 categories: "News"
-date: "2014-01-19T00:00:00.000Z"
+date: "2014-01-19T00:00:00.000-05:00"
 path: "/blog/redesign"
 ---
 

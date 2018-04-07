@@ -1,9 +1,9 @@
 ---
 title: "A Speedy New Server: NGINX, HHVM, and more!"
 excerpt: "An article discussing how we moved over to a new server infrastructure with Laravel Forge. We're now running faster with NGINX and HHVM."
-author: "Kyle McDonald"
+author: "Sunny Singh"
 categories: "News"
-date: "2015-04-29T00:00:00.000Z"
+date: "2015-04-29T05:21:42.000-04:00"
 path: "/blog/server-restructure-nginx-hhvm"
 ---
 
