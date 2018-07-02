@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
-import Helmet from 'react-helmet'
-import Container from '../components/Container'
-import Title from '../components/Title'
-import { Button } from '../components/Button'
-import { Input, Textarea } from '../components/Input'
-import { Form, Group } from '../components/Form'
-import { AccessibleLabel } from '../components/ScreenReader'
+import React, { Component } from "react";
+import Helmet from "react-helmet";
+import Container from "../components/Container";
+import Title from "../components/Title";
+import { Button } from "../components/Button";
+import { Input, Textarea } from "../components/Input";
+import { Form, Group } from "../components/Form";
+import { AccessibleLabel } from "../components/ScreenReader";
 
-const FORM_ENDPOINT = 'https://jumprock.co/mail/ninjality'
-const FORM_REDIRECT = 'https://ninjality.com/contact-sent'
+const FORM_ENDPOINT = "https://formspree.io/team@ninjality.com";
+const FORM_REDIRECT = "https://ninjality.com/contact-sent";
 
 class Contact extends Component {
   render() {
@@ -22,12 +22,11 @@ class Contact extends Component {
         <Form action={FORM_ENDPOINT} method="post">
           <input
             type="text"
-            name="trapit"
+            name="_gotcha"
             value=""
-            style={{ display: 'none' }}
+            style={{ display: "none" }}
           />
-          <input type="hidden" name="replyto" value="%email" />
-          <input type="hidden" name="after" value={FORM_REDIRECT} />
+          <input type="hidden" name="_next" value={FORM_REDIRECT} />
 
           <Group>
             <AccessibleLabel htmlFor="nameInput">Name</AccessibleLabel>
@@ -66,8 +65,8 @@ class Contact extends Component {
           </Group>
         </Form>
       </Container>
-    )
+    );
   }
 }
 
-export default Contact
+export default Contact;
