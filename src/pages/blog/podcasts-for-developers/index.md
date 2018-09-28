@@ -75,7 +75,7 @@ If that's not enough JavaScript for you, take a look at JSJ which is hosted by C
 
 ## Web of Tomorrow
 
-[![Web of Tomorrow](./images/weboftomorrow.jpg)]((http://www.weboftomorrowpodcast.com/))
+[![Web of Tomorrow](./images/weboftomorrow.jpg)]((https://www.orbit.fm/weboftomorrow/))
 
 [Web of Tomorrow](http://www.weboftomorrowpodcast.com/) is "a podcast about JavaScript, web development, web design, and technology. We are Riley Carrasquillo (the noob) and Adam Harris (the not noob), and we love web technology and we love talking about it."
 
